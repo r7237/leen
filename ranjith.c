@@ -1,21 +1,20 @@
 #include<stdio.h>
-int main() {
-   char str1[30], str2[30];
+#include<conio.h>
+int main()
+{
+   char a[30], b[30];
    int i;
- 
    printf("\nEnter two strings :");
-   gets(str1);
-   gets(str2);
- 
+   gets(a);
+   gets(b);
    i = 0;
-   while (str1[i] == str2[i] && str1[i] != '\0')
+   while (a[i] == b[i] && a[i] != '\0')
       i++;
-   if (str1[i] > str2[i])
-      printf("str1 > str2");
-   else if (str1[i] < str2[i])
-      printf("str1 < str2");
+   if (a[i] > b[i])
+      printf("a > b");
+   else if (a[i] < b[i])
+      printf("a < b");
    else
-      printf("str1 = str2");
- 
+      printf("a = b");
    return (0);
 }
